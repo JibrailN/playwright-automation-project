@@ -1,0 +1,33 @@
+{
+  "name": "saucedemo-playwright-automation",
+  "version": "1.0.0",
+  "description": "End-to-end test automation suite for the SauceDemo e-commerce web application, built with Playwright + JavaScript using the Page Object Model. Covers Login, Product Listing & Filters, Shopping Cart, and Checkout modules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:login": "playwright test tests/login.spec.js",
+    "test:products": "playwright test tests/products.spec.js",
+    "test:cart": "playwright test tests/cart.spec.js",
+    "test:checkout": "playwright test tests/checkout.spec.js",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "qa",
+    "e2e-testing",
+    "saucedemo",
+    "javascript",
+    "page-object-model"
+  ],
+  "author": "Khizer",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.48.0"
+  }
+}
